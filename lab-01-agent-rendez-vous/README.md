@@ -1,4 +1,4 @@
-# Lab 02 – Agent IA : questions, prise de rendez-vous et résumé par e-mail
+# Lab 01 – Agent IA : questions, prise de rendez-vous et résumé par e-mail
 
 ## Contexte
 **Agent Nova**, l'agence marocaine d'organisation de mariages et de conférences, veut un assistant IA sur son site. Cet assistant :
@@ -145,4 +145,4 @@ Ajoute aussi un bouton "Prendre rendez-vous" sur la page d'accueil qui ouvre le 
 ## Pour aller plus loin
 - Envoyer un rappel par e-mail au client la veille du rendez-vous
 - Prévenir l'équipe sur WhatsApp ou Slack à chaque nouveau rendez-vous
-- Relier ce lab au Lab 01 pour envoyer aussi un devis PDF
+- Enchaîner avec le Lab 02 pour envoyer aussi un devis PDF

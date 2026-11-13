@@ -1,4 +1,4 @@
-# Lab 01 – Agent Nova : du chatbot au devis par e-mail
+# Lab 02 – Agent Nova : du chatbot au devis par e-mail
 
 ## Contexte
 **Agent Nova** est une agence marocaine qui organise des mariages et des conférences. Elle veut automatiser ses demandes de devis : un client discute avec un chatbot, puis il reçoit son devis PDF par e-mail.

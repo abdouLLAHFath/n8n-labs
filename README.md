@@ -4,8 +4,8 @@ Travaux pratiques pour apprendre à construire des workflows et des agents IA av
 
 | Lab | Sujet | Niveau |
 |-----|-------|--------|
-| [Lab 01 – Agent Nova](lab-01-agent-nova/) | Chatbot + devis PDF + e-mail, intégré sur un site Replit | Débutant |
-| [Lab 02 – Agent rendez-vous](lab-02-agent-rendez-vous/) | Agent IA + Google Sheets + Google Calendar + Gmail, intégré sur Replit | Intermédiaire |
+| [Lab 01 – Agent rendez-vous](lab-01-agent-rendez-vous/) | Agent IA + Google Sheets + Google Calendar + Gmail, intégré sur Replit | Débutant |
+| [Lab 02 – Agent Nova devis](lab-02-agent-nova/) | Chatbot + devis PDF + e-mail, intégré sur un site Replit | Intermédiaire |
 
 ## Prérequis
 - Un compte n8n (n8n Cloud ou auto-hébergé) avec l'AI Workflow Builder
