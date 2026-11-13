@@ -4,9 +4,10 @@ Travaux pratiques pour apprendre à construire des workflows et des agents IA av
 
 | Lab | Sujet | Niveau |
 |-----|-------|--------|
-| [Lab 01 – Agent Nova](lab-01-agent-nova/) | Chatbot + générateur de devis PDF + envoi d'e-mail | Débutant |
+| [Lab 01 – Agent Nova](lab-01-agent-nova/) | Chatbot + devis PDF + e-mail, intégré sur un site Replit | Débutant |
 
 ## Prérequis
 - Un compte n8n (n8n Cloud ou auto-hébergé) avec l'AI Workflow Builder
 - Une clé API OpenAI (ou un autre modèle de langage)
 - Un compte Gmail relié à n8n
+- Un compte Replit

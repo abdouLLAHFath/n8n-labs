@@ -14,13 +14,14 @@
 - Enchaîner deux agents : le premier transmet ses informations au second
 - Générer un document PDF
 - Envoyer un e-mail automatique avec une pièce jointe
+- Publier le workflow et intégrer le chatbot sur un site web Replit
 
 ## Architecture
 ```
-Chat client → Agent 1 (chatbot) → Agent 2 (devis PDF) → Envoi de l'e-mail
+Site Replit (chatbot) → Agent 1 (chatbot) → Agent 2 (devis PDF) → Envoi de l'e-mail
 ```
 
-On construit le workflow **en 3 étapes**, avec un prompt par étape dans l'**AI Workflow Builder** de n8n. Teste chaque étape avant de passer à la suivante.
+On construit le projet **en 5 étapes**, avec un prompt par étape : les étapes 1 à 4 se font dans l'**AI Workflow Builder** de n8n, et l'étape 5 dans **Replit**. Teste chaque étape avant de passer à la suivante.
 
 ---
 
@@ -73,8 +74,41 @@ Ajoute une dernière étape à ce workflow : une fois le devis prêt, le workflo
 
 ---
 
+## Étape 4 – Publier le workflow et récupérer le code du chatbot (n8n)
+
+Colle ce prompt dans l'AI Workflow Builder :
+
+```
+Rends le chatbot de ce workflow accessible publiquement pour que je puisse l'intégrer sur mon site web.
+Génère-moi le code HTML complet à copier-coller dans mon site pour afficher le chatbot Agent Nova (une bulle de chat en bas à droite, avec le message d'accueil "Bonjour 👋 Je suis Nova, comment puis-je vous aider pour votre événement ?").
+```
+
+Ensuite :
+1. Clique sur **Publish** (en haut à droite) pour mettre le workflow en ligne.
+2. **Copie le code HTML** généré par n8n : tu en auras besoin à l'étape suivante.
+
+**✅ Test :** ouvre l'URL publique du chat et vérifie que le chatbot répond.
+
+---
+
+## Étape 5 – Ajouter le chatbot sur le site (Replit)
+
+Ouvre ton projet sur **Replit** et colle ce prompt dans l'Agent Replit, en remplaçant la dernière ligne par le code copié depuis n8n :
+
+```
+Crée une page d'accueil simple et élégante pour "Agent Nova", une agence marocaine qui organise des mariages et des conférences.
+La page présente l'agence, nos deux offres (mariage et conférence) avec leurs prix, et un bouton "Demander un devis".
+Ajoute sur cette page le chatbot avec le code HTML ci-dessous, sans le modifier. Le bouton "Demander un devis" doit ouvrir le chatbot.
+
+[colle ici le code HTML copié depuis n8n]
+```
+
+**✅ Test :** ouvre ton site Replit, clique sur la bulle de chat et fais une demande de devis complète jusqu'à la réception de l'e-mail.
+
+---
+
 ## Résultat attendu
-Un workflow complet : le client discute avec le chatbot, confirme, puis reçoit son devis PDF par e-mail en quelques secondes.
+Un site Agent Nova en ligne sur Replit, avec un chatbot : le client discute, confirme, puis reçoit son devis PDF par e-mail en quelques secondes.
 
 ## Pour aller plus loin
 - Enregistrer chaque demande dans un Google Sheet
